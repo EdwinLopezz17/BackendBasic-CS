@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.API", "LearningCenter.API\LearningCenter.API.csproj", "{1F9747F8-B182-424F-A8CF-3092FCD70E75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Domain", "LearningCenter.Domain\LearningCenter.Domain.csproj", "{FA5CC6B3-C977-4644-B32D-658E2A7368F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningCenter.Infraestructure", "LearningCenter.Infraestructure\LearningCenter.Infraestructure.csproj", "{E53F5E98-D7F2-4BBE-B553-3FB479F2C29A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F9747F8-B182-424F-A8CF-3092FCD70E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F9747F8-B182-424F-A8CF-3092FCD70E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F9747F8-B182-424F-A8CF-3092FCD70E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F9747F8-B182-424F-A8CF-3092FCD70E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5CC6B3-C977-4644-B32D-658E2A7368F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5CC6B3-C977-4644-B32D-658E2A7368F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5CC6B3-C977-4644-B32D-658E2A7368F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5CC6B3-C977-4644-B32D-658E2A7368F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53F5E98-D7F2-4BBE-B553-3FB479F2C29A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53F5E98-D7F2-4BBE-B553-3FB479F2C29A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53F5E98-D7F2-4BBE-B553-3FB479F2C29A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53F5E98-D7F2-4BBE-B553-3FB479F2C29A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
