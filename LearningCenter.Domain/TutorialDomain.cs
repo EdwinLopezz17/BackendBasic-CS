@@ -15,6 +15,7 @@ public class TutorialDomain: ITutorialDomain
     
     public bool save(Tutorial tutorial)
     {
+        if (!IsValidName(tutorial.name)) throw new Exception("less than 3");
         return _tutorialInfraestructure.save(tutorial);
     }
 

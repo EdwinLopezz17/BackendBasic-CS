@@ -1,18 +1,3 @@
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Domain.deps.json
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Domain.dll
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Domain.pdb
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Infraestructure.dll
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Infraestructure.pdb
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.csproj.AssemblyReference.cache
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.GeneratedMSBuildEditorConfig.editorconfig
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.AssemblyInfoInputs.cache
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.AssemblyInfo.cs
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.csproj.CoreCompileInputs.cache
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.csproj.CopyComplete
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.dll
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\refint\LearningCenter.Domain.dll
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\LearningCenter.Domain.pdb
-D:\cursos de ing. de software\Civlo VI\Aplicaciones web\backend\LearningCenter\LearningCenter.Domain\obj\Debug\net7.0\ref\LearningCenter.Domain.dll
 E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Domain.deps.json
 E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Domain.dll
 E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.Domain\bin\Debug\net7.0\LearningCenter.Domain.pdb
