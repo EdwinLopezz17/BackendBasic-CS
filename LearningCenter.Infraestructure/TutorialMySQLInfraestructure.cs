@@ -1,6 +1,7 @@
 ﻿using LearningCenter.Infraestructure.Context;
 using LearningCenter.Infraestructure.Interfases;
 using LearningCenter.Infraestructure.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace LearningCenter.Infraestructure;
 
@@ -14,10 +15,10 @@ public class TutorialMySQLInfraestructure: ITutorialInfraestructure
         _learningCenterDbContext = learningCenterDbContext;
     }
     
-    public List<Tutorial> GetAll()
+    public async Task<List<Tutorial>> GetAllAsync()
     {
 
-        return _learningCenterDbContext.Tutorials.Where(tutorial => tutorial.isActive).ToList();
+        return await _learningCenterDbContext.Tutorials.Where(tutorial => tutorial.isActive).ToListAsync();
         
         /*var result = from tutorials in _learningCenterDbContext.Tutorials
             where tutorials.isActive
@@ -32,10 +33,10 @@ public class TutorialMySQLInfraestructure: ITutorialInfraestructure
        //return _learningCenterDbContext.Tutorials.Single(tutorial => tutorial.id == id);
     }
 
-    public bool save(Tutorial tutorial)
+    public async Task<bool> saveAsync(Tutorial tutorial)
     {
-        _learningCenterDbContext.Tutorials.Add(tutorial);
-        _learningCenterDbContext.SaveChanges();
+        await _learningCenterDbContext.Tutorials.AddAsync(tutorial);
+        await _learningCenterDbContext.SaveChangesAsync();
         return true;
     }
 

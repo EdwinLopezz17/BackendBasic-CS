@@ -13,10 +13,10 @@ public class TutorialDomain: ITutorialDomain
         _tutorialInfraestructure = tutorialInfraestructure;
     }
     
-    public bool save(Tutorial tutorial)
+    public async Task<bool> saveAsync(Tutorial tutorial)
     {
         if (!IsValidName(tutorial.name)) throw new Exception("less than 3");
-        return _tutorialInfraestructure.save(tutorial);
+        return await _tutorialInfraestructure.saveAsync(tutorial);
     }
 
     public bool update(int id, string name)

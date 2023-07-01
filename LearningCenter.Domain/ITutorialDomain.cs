@@ -4,7 +4,7 @@ namespace LearningCenter.Domain;
 
 public interface ITutorialDomain
 {
-    public bool save( Tutorial tutorial);
+    public Task<bool> saveAsync( Tutorial tutorial);
 
     public bool update(int id, string name);
     

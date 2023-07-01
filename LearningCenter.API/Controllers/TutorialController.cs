@@ -31,9 +31,9 @@ namespace LearningCenter.API.Controllers
         
         // GET: api/Tutorial
         [HttpGet]
-        public List<Tutorial> Get()
+        public async Task<List<Tutorial>> GetAsync()
         {
-            return _tutorialInfraestructure.GetAll();
+            return await _tutorialInfraestructure.GetAllAsync();
         }
 
         // GET: api/Tutorial/5
@@ -56,7 +56,7 @@ namespace LearningCenter.API.Controllers
 
         // POST: api/Tutorial
         [HttpPost]
-        public void Post([FromBody] TutorialRequest tutorialRequest)
+        public async void PostAsync ([FromBody] TutorialRequest tutorialRequest)
         {
             if (ModelState.IsValid)
             {
@@ -68,7 +68,7 @@ namespace LearningCenter.API.Controllers
                     maxLenght = tutorialRequest.maxLenght,
                 };
             
-                _tutorialDomain.save(tutorial);
+                await _tutorialDomain.saveAsync(tutorial);
             }
             else
             {

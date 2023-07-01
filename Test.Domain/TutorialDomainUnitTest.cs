@@ -17,15 +17,15 @@ public class TutorialDomainUnitTest
         };
         //Mock
         var tutorialInfraestructure = new Mock<ITutorialInfraestructure>();
-        tutorialInfraestructure.Setup(t => t.save(tutorial)).Returns(true);
+        tutorialInfraestructure.Setup(t => t.saveAsync(tutorial)).ReturnsAsync(true);
 
         TutorialDomain tutorialDomain = new TutorialDomain(tutorialInfraestructure.Object);
 
         //Act
-        var result = tutorialDomain.save(tutorial);
+        var result = tutorialDomain.saveAsync(tutorial);
         
         //Assert
-        Assert.Equal(true, result);
+        Assert.Equal(true, result.Result);
     }
     
     [Fact]
@@ -38,14 +38,14 @@ public class TutorialDomainUnitTest
         };
         //Mock
         var tutorialInfraestructure = new Mock<ITutorialInfraestructure>();
-        tutorialInfraestructure.Setup(t => t.save(tutorial)).Returns(true);
+        tutorialInfraestructure.Setup(t => t.saveAsync(tutorial)).ReturnsAsync(true);
 
         TutorialDomain tutorialDomain = new TutorialDomain(tutorialInfraestructure.Object);
 
         //Act
-        var ex = Assert.Throws<Exception>(() => tutorialDomain.save(tutorial));
+        var ex = Assert.ThrowsAsync<Exception>(()  => tutorialDomain.saveAsync(tutorial));
         
         //Assert
-        Assert.Equal("less than 3", ex.Message);
+        Assert.Equal("less than 3", ex.Result.Message);
     }
 }
