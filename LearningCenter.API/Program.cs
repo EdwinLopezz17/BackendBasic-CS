@@ -20,6 +20,11 @@ builder.Services.AddScoped<ITutorialInfraestructure, TutorialMySQLInfraestructur
 builder.Services.AddScoped<ITutorialDomain, TutorialDomain>();
 
 
+//CORS
+/*builder.Services.AddCors(p => p.AddPolicy("corsapp", builder =>
+{
+    builder.WithOrigins("*").AllowAnyMethod().AllowAnyMethod();
+}));*/
 
 //conexion con mysql
 var connectionString = builder.Configuration.GetConnectionString("learningCenterConnection");
@@ -50,6 +55,11 @@ using (var context = scope.ServiceProvider.GetService<LearningCenterDBContext>()
     context.Database.EnsureCreated();
 }
 
+//Cors
+app.UseCors(x => x
+    .AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
