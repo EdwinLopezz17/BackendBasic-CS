@@ -474,3 +474,5 @@ E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.API\obj\Debug\
 E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.API\obj\Debug\net7.0\LearningCenter.API.pdb
 E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.API\obj\Debug\net7.0\LearningCenter.API.genruntimeconfig.cache
 E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.API\obj\Debug\net7.0\ref\LearningCenter.API.dll
+E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.API\bin\Debug\net7.0\AutoMapper.dll
+E:\Proyectos RIDER\Aplicaciones Web\LearningCenter\LearningCenter.API\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

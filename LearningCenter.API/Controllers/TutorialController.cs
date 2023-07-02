@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using LearningCenter.API.Request;
 using LearningCenter.API.Response;
 using LearningCenter.Domain;
@@ -19,21 +20,25 @@ namespace LearningCenter.API.Controllers
 
         private ITutorialInfraestructure _tutorialInfraestructure;
         private ITutorialDomain _tutorialDomain;
+        private IMapper _mapper;
         
         public TutorialController(ITutorialInfraestructure tutorialInfraestructure,
-            ITutorialDomain tutorialDomain)
+            ITutorialDomain tutorialDomain, IMapper mapper)
         {
             _tutorialInfraestructure = tutorialInfraestructure;
             _tutorialDomain = tutorialDomain;
+            _mapper = mapper;
         }
         
         
         
         // GET: api/Tutorial
         [HttpGet]
-        public async Task<List<Tutorial>> GetAsync()
+        public async Task<List<TutorialResponse>> GetAsync()
         {
-            return await _tutorialInfraestructure.GetAllAsync();
+            var tutorialList = await _tutorialInfraestructure.GetAllAsync();
+            
+            return _mapper.Map<List<Tutorial>, List<TutorialResponse>>(tutorialList);
         }
 
         // GET: api/Tutorial/5
@@ -41,15 +46,8 @@ namespace LearningCenter.API.Controllers
         public TutorialResponse Get(int id)
         {
             Tutorial tutorial = _tutorialInfraestructure.GetById(id);
-            
-            //temporal
-            TutorialResponse tutorialResponse = new TutorialResponse()
-            {
-                id = tutorial.id,
-                name = tutorial.name,
-                description = tutorial.description,
-                maxLenght = tutorial.maxLenght,
-            };
+
+            var tutorialResponse = _mapper.Map<Tutorial, TutorialResponse>(tutorial);
 
             return tutorialResponse;
         }
@@ -60,14 +58,7 @@ namespace LearningCenter.API.Controllers
         {
             if (ModelState.IsValid)
             {
-                //temporal
-                Tutorial tutorial = new Tutorial()
-                {
-                    name = tutorialRequest.name,
-                    description = tutorialRequest.description,
-                    maxLenght = tutorialRequest.maxLenght,
-                };
-            
+                Tutorial tutorial = _mapper.Map<TutorialRequest, Tutorial>(tutorialRequest);
                 await _tutorialDomain.saveAsync(tutorial);
             }
             else

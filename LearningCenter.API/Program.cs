@@ -1,3 +1,4 @@
+using LearningCenter.API.Mapper;
 using LearningCenter.Domain;
 using LearningCenter.Infraestructure;
 using LearningCenter.Infraestructure.Context;
@@ -34,6 +35,11 @@ builder.Services.AddDbContext<LearningCenterDBContext>(
                 errorNumbersToAdd: null)
         );
     });
+
+builder.Services.AddAutoMapper(
+    typeof(ModelToResponse),
+    typeof(RequesToModel)
+);
 
 
 var app = builder.Build();

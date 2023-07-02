@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YriIoq35tmkgww3ZCPgB0Lj4KpCRzzOinWdgbi/eTssKwadxzit4xieupzDZ6E8/d75Giy7v1m3P3L/3D02+sw==",
+  "dgSpecHash": "SzBhbfKhKmXnmf4DnpRZAf/e6I6YHU+nQjT1DZiLRz1V3oLEIQMg9pKFZ8u5TRkMYzm21wzBCqM/0AncaT36OQ==",
   "success": true,
   "projectFilePath": "E:\\Proyectos RIDER\\Aplicaciones Web\\LearningCenter\\LearningCenter.API\\LearningCenter.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\edwin\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\edwin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",
@@ -70,6 +72,7 @@
     "C:\\Users\\edwin\\.nuget\\packages\\microsoft.codeanalysis.razor\\6.0.11\\microsoft.codeanalysis.razor.6.0.11.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\microsoft.codeanalysis.scripting.common\\4.4.0\\microsoft.codeanalysis.scripting.common.4.4.0.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\4.4.0\\microsoft.codeanalysis.workspaces.common.4.4.0.nupkg.sha512",
+    "C:\\Users\\edwin\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\microsoft.diasymreader\\1.4.0\\microsoft.diasymreader.1.4.0.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\microsoft.dotnet.scaffolding.shared\\7.0.7\\microsoft.dotnet.scaffolding.shared.7.0.7.nupkg.sha512",
     "C:\\Users\\edwin\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.8\\microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
